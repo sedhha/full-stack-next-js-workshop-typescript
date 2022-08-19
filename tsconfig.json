@@ -19,7 +19,11 @@
       "@/components/*": ["components/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"],
-      "@/middlewares/*": ["middleware/*"]
+      "@/middlewares/*": ["middleware/*"],
+      "@/firebase-server/*": ["firebase/backend/*"],
+      "@/firebase-client/*": ["firebase/frontend/*"],
+      "@/firebase/*": ["firebase/*"],
+      "@/secrets/*": ["secrets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],

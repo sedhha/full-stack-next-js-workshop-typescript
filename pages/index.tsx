@@ -5,6 +5,7 @@ export default function Home() {
   const gotoBlogs = () => router.push('/blog/first-blog');
   const gotoConfig = () => router.push('/config/user-field/type/name/John-Doe');
   const gotoNavigation = () => router.push('/navigation');
+  const gotoFirebaseLogin = () => router.push('/firebase-login');
 
   return (
     <div>
@@ -29,6 +30,12 @@ export default function Home() {
           className='p-2 mt-2 ml-2 text-white bg-blue-600'
           onClick={gotoNavigation}>
           Navigation
+        </button>
+
+        <button
+          className='p-2 mt-2 ml-2 text-white bg-blue-600'
+          onClick={gotoFirebaseLogin}>
+          FirebaseLogin
         </button>
       </main>
     </div>
