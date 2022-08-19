@@ -1,5 +1,12 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function ConfigPage() {
-  return <div>Config Page</div>;
+  const router = useRouter();
+  return (
+    <div>
+      Config Page All Slugs:{' '}
+      {((router.query?.allConfig ?? []) as string[]).join(', ')}
+    </div>
+  );
 }

@@ -1,5 +1,7 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function SlugPage() {
-  return <div>Slug Page</div>;
+  const router = useRouter();
+  return <div>Blog Slug: {router.query.slug}</div>;
 }
